@@ -1,4 +1,5 @@
 const myIncrease = document.getElementById("increase")
+const reset = document.getElementById("reset")
 
 let count = 0;
 
@@ -12,6 +13,10 @@ myIncrease.addEventListener("click", function (event) {
 const myDecrease = document.getElementById("decrease")
 
 myDecrease.addEventListener("click", function (event) {
-    count =count-1;
+    count = count - 1;
     result.innerHTML = count;
+})
+reset.addEventListener("click", function (event) {
+    count = 0;
+    result.innerHTML = "0";
 })
